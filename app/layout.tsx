@@ -1,15 +1,19 @@
-import type { Metadata } from 'next'
-import './globals.css'
+import type { Metadata } from "next";
+import "./globals.css";
 
 export const metadata: Metadata = {
-  title: 'Avatar Chat',
-  description: 'Chatbot with Rive avatar',
-}
+  title: "Avatar Chat",
+  description: "Chatbot with Rive avatar",
+};
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="ja">
-      <body>{children}</body>
+      <body suppressHydrationWarning>{children}</body>
     </html>
-  )
+  );
 }
